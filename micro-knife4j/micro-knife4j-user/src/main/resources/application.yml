@@ -1,21 +1,14 @@
 server:
-  port: 9401
+  port: 9501
 spring:
   profiles:
     active: dev
   application:
-    name: micro-oauth2-auth
+    name: micro-knife4j-user
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
-  jackson:
-    date-format: yyyy-MM-dd HH:mm:ss
-  redis:
-    database: 0
-    port: 6379
-    host: localhost
-    password: 123456
 management:
   endpoints:
     web:
